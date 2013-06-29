@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script type="text/javascript" src="ir.js"></script>
+    <script>
+        var docarr = [{"doc":"hi document hi hi "},{"doc":"hidocument hi hi "},{"doc":"hi abc hi hi "},{"doc":"hi document abc abc hi "}];
+        window.onload = function(){
+            var doccole= new ir.Documents();
+            doccole.add("hi document hi hi");
+            doccole.add("hidocument hi hi");
+            doccole.add("hi abc hi hi");
+            doccole.add("hi document abc abc hi");
+
+            ir.tfidf(doccole,"hi abc");
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>
